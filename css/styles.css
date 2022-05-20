@@ -1,0 +1,82 @@
+.scroll .page-header {
+    background: var(--red);
+  }
+  .scroll .hero {
+    transform: scale(0.98);
+  }
+  .hero {
+    transition: transform 0.5s ease-in-out;
+  }
+   
+  .page-header {
+    transition: background 0.5s ease-in-out;
+  }
+   
+  .page-header .navbar {
+    padding: 1rem 0;
+  }
+   
+  .page-header .navbar-toggler {
+    border-color: var(--white); 
+    
+  }
+   
+  @media screen and (max-width: 991px) {
+    .page-header {
+      background: var(--red);
+    }
+  }
+
+  .scroll .hero {
+    transform: scale(0.98);
+  }
+   
+  .hero {
+    background-attachment: fixed;
+    transition: transform 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+   
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0, 
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+   
+  .hero .container-fluid {
+    z-index: 10;
+  }
+
+  .page-footer .footer-links {
+    text-align: right;
+  }
+   
+  @media screen and (max-width: 767px) {
+    .page-footer .footer-child {
+      text-align: center;
+    }
+  }
+
+  h1{
+      background-color:white;
+    text-align: center;
+    line-height:2em ;
+    font-weight: 500;
+
+  }
+  .nav-link{
+      color:rgb(231, 5, 137);
+      align-items: center;
+  }
